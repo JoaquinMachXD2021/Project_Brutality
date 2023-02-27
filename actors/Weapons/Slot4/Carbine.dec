@@ -285,7 +285,8 @@ ACTOR PB_Carbine : PB_Weapon
 		CB02 A 1 BRIGHT {
 			A_AlertMonsters;
 			A_PlaySoundEx("Weapons/Rifle/SFire", "SoundSlot7");
-			A_FireBullets (0.1, 0.1, -1, 20, "HitPuff", FBF_NORANDOM,8192,"Tracer", -4,-8);
+			//A_FireBullets (0.1, 0.1, -1, 20, "HitPuff", FBF_NORANDOM,8192,"Tracer", -4,-8);
+			A_FireProjectile("PB_556x45mm", frandom(-0.1,0.1),0,0,0, FPF_NOAUTOAIM, frandom(-0.1,0.1));
 			A_FireCustomMissile("YellowFlareSpawn",0,0,-4,0);
 			A_FireCustomMissile("GunFireSmoke", 0, 0, -4, 0, 0, 0);
 			A_FireCustomMissile("RifleCaseSpawn",5,0,-14,-6);
@@ -316,7 +317,8 @@ ACTOR PB_Carbine : PB_Weapon
 		CB03 A 1 BRIGHT {
 			A_AlertMonsters;
 			A_PlaySoundEx("Weapons/Rifle/SFire", "SoundSlot6");
-			A_FireBullets (0.1, 0.1, -1, 20, "HitPuff", FBF_NORANDOM,8192,"Tracer", -4, 8);
+			//A_FireBullets (0.1, 0.1, -1, 20, "HitPuff", FBF_NORANDOM,8192,"Tracer", -4, 8);
+			A_FireProjectile("PB_556x45mm", frandom(-0.1,0.1),0,0,0, FPF_NOAUTOAIM, frandom(-0.1,0.1));
 			A_FireCustomMissile("YellowFlareSpawn",0,0,4,0);
 			A_FireCustomMissile("GunFireSmoke", 0, 0, 4, 0, 0, 0);
 			A_FireCustomMissile("RifleCaseSpawn",5,0,16,-5);
@@ -604,7 +606,8 @@ ACTOR PB_Carbine : PB_Weapon
 			if (CountInv("CarbineMuzzleFlash2") >= 1 ) { A_SetWeaponSprite("4BFF");}
 			if (CountInv("CarbineMuzzleFlash3") >= 1 ) { A_SetWeaponSprite("4CFF");}
 			A_GunFlash;
-			A_FireBullets (0.1, 0.1, -1, 20, "HitPuff", FBF_NORANDOM,8192,"Tracer", -2,0);
+			//A_FireBullets (0.1, 0.1, -1, 20, "HitPuff", FBF_NORANDOM,8192,"Tracer", -2,0);
+			A_FireProjectile("PB_556x45mm", frandom(-0.1,0.1),0,0,0, FPF_NOAUTOAIM, frandom(-0.1,0.1));
 			A_FireCustomMissile("ShakeYourAssMinor", 0, 0, 0, 0);
 			A_FireCustomMissile("YellowFlareSpawn",0,0,0,0);
 			A_FireCustomMissile("GunFireSmoke", 0, 0, 0, 0, 0, 0);
@@ -675,7 +678,8 @@ ACTOR PB_Carbine : PB_Weapon
 		Fire2_Flash1:
 		4A2F A 1 BRIGHT {
 			A_GunFlash;
-			A_FireBullets (0.1, 0.1, -1, 20, "HitPuff", FBF_NORANDOM,8192,"Tracer", -2,0);
+			//A_FireBullets (0.1, 0.1, -1, 20, "HitPuff", FBF_NORANDOM,8192,"Tracer", -2,0);
+			A_FireProjectile("PB_556x45mm", frandom(-0.1,0.1),0,0,0, FPF_NOAUTOAIM, frandom(-0.1,0.1));
 			A_FireCustomMissile("ShakeYourAssMinor", 0, 0, 0, 0);
 			A_FireCustomMissile("YellowFlareSpawn",0,0,0,0);
 			A_FireCustomMissile("GunFireSmoke", 0, 0, 0, 0, 0, 0);
@@ -745,7 +749,8 @@ ACTOR PB_Carbine : PB_Weapon
 		Fire2_Flash2:
 		4A3F A 1 BRIGHT {
 			A_GunFlash;
-			A_FireBullets (0.1, 0.1, -1, 20, "HitPuff", FBF_NORANDOM,8192,"Tracer", -2,0);
+			//A_FireBullets (0.1, 0.1, -1, 20, "HitPuff", FBF_NORANDOM,8192,"Tracer", -2,0);
+			A_FireProjectile("PB_556x45mm", frandom(-0.1,0.1),0,0,0, FPF_NOAUTOAIM, frandom(-0.1,0.1));
 			A_FireCustomMissile("ShakeYourAssMinor", 0, 0, 0, 0);
 			A_FireCustomMissile("YellowFlareSpawn",0,0,0,0);
 			A_FireCustomMissile("GunFireSmoke", 0, 0, 0, 0, 0, 0);
